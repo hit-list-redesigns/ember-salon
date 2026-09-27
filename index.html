@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ember Salon Ballarat | Colour, cuts &amp; Great Lengths extensions</title>
+<meta name="description" content="Independent hair salon on Doveton Street North, Ballarat Central, since 2005. Colour, cuts, blow-waves and Great Lengths extensions. Every price listed. Book online.">
+<meta name="theme-color" content="#11291F">
+<meta property="og:title" content="Ember Salon Ballarat">
+<meta property="og:description" content="Colour, cuts, blow-waves and Great Lengths extensions on Doveton Street North since 2005. Book online.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=1200&h=630&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2311291F'/%3E%3Crect x='4' y='4' width='56' height='56' fill='none' stroke='%23D9B865' stroke-width='2'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23D9B865'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-950:#0C1F18;
+  --green-900:#11291F;
+  --green-800:#183628;
+  --green-700:#22493A;
+  --green-line:#3C6452;
+  --lime-50:#F1F3F0;
+  --lime-100:#E6EAE5;
+  --lime-200:#D3D9D2;
+  --lime-300:#B9C2B8;
+  --stone-800:#26302F;
+  --stone-900:#1B2322;
+  --gold-100:#F6E7B8;
+  --gold-300:#E6C977;
+  --gold-400:#D9B865;
+  --gold-500:#BF9A45;
+  --gold-700:#6F5316;
+  --gold-shade:#3A2A0B;
+  --ink:#16201C;
+  --ink-2:#3F4B46;
+  --on-green:#E9EDE6;
+  --on-green-2:#B4C3B9;
+  --focus-light:#11291F;
+  --focus-dark:#E6C977;
+
+  --serif:"Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
+  --sans:"Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2rem; --s7:3rem; --s8:4rem; --s9:6rem; --s10:8rem;
+  --wrap:1320px;
+  --gutter:clamp(16px, 4vw, 48px);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --z-bar:40;
+  --lace:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 56'%3E%3Cg fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='48' cy='19.5' r='10'/%3E%3Cpath d='M2 9c11 0 17 4 17 10.5 0 4.6-3.6 7.2-7 5.6-2.6-1.2-2.6-5 .4-5.6'/%3E%3Cpath d='M94 9c-11 0-17 4-17 10.5 0 4.6 3.6 7.2 7 5.6 2.6-1.2 2.6-5-.4-5.6'/%3E%3Cpath d='M2 31c10 0 18-2 24-6.5 4-3 7-5 12-5'/%3E%3Cpath d='M94 31c-10 0-18-2-24-6.5-4-3-7-5-12-5'/%3E%3Cpath d='M0 37.5q12 12 24 0t24 0 24 0 24 0'/%3E%3C/g%3E%3Cg fill='%23000'%3E%3Crect width='96' height='5'/%3E%3Crect y='33' width='96' height='3.5'/%3E%3Crect y='5' width='2.2' height='28'/%3E%3Crect x='93.8' y='5' width='2.2' height='28'/%3E%3Ccircle cx='48' cy='19.5' r='3.4'/%3E%3Cellipse cx='48' cy='12.6' rx='1.9' ry='3'/%3E%3Cellipse cx='48' cy='26.4' rx='1.9' ry='3'/%3E%3Cellipse cx='41.1' cy='19.5' rx='3' ry='1.9'/%3E%3Cellipse cx='54.9' cy='19.5' rx='3' ry='1.9'/%3E%3Ccircle cx='12' cy='49' r='2.1'/%3E%3Ccircle cx='36' cy='49' r='2.1'/%3E%3Ccircle cx='60' cy='49' r='2.1'/%3E%3Ccircle cx='84' cy='49' r='2.1'/%3E%3Cpath d='M24 38.5c2.6 5 3.4 9 0 14-3.4-5-2.6-9 0-14zM72 38.5c2.6 5 3.4 9 0 14-3.4-5-2.6-9 0-14z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scrollbar-color:var(--gold-500) var(--green-900);scroll-padding-top:var(--s5)}
+body{margin:0;background:var(--lime-100);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;font-feature-settings:"kern","liga";text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:800;line-height:1.04;text-wrap:balance;letter-spacing:-.012em}
+p{margin:0;text-wrap:pretty}
+ul,ol{margin:0;padding:0;list-style:none}
+::selection{background:var(--gold-300);color:var(--green-950)}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--green-900)}
+::-webkit-scrollbar-thumb{background:var(--gold-500);border:3px solid var(--green-900)}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-300)}
+:focus-visible{outline:2px solid var(--focus-light);outline-offset:3px}
+.on-green :focus-visible,.on-green:focus-visible{outline-color:var(--focus-dark)}
+
+.skip{position:absolute;left:var(--s4);top:-100px;z-index:100;background:var(--gold-300);color:var(--green-950);padding:var(--s3) var(--s4);font-weight:700}
+.skip:focus{top:var(--s4)}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Shared pieces ---------- */
+.lace{display:block;height:44px;color:var(--green-900);background:currentColor;-webkit-mask:var(--lace) center top / 96px 56px repeat-x;mask:var(--lace) center top / 96px 56px repeat-x;margin-top:-1px}
+.lace--gold{color:var(--gold-500)}
+.lace--short{height:36px}
+
+.btn{--bg:var(--gold-400);--fg:var(--green-950);display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:.85rem 1.6rem;background:var(--bg);color:var(--fg);font:700 1rem/1.1 var(--sans);letter-spacing:.01em;text-decoration:none;border:1px solid var(--bg);box-shadow:inset 0 0 0 3px var(--bg),inset 0 0 0 4px rgba(58,42,11,.45);transition:background-color .25s var(--ease-out),color .25s var(--ease-out),transform .15s var(--ease-out)}
+.btn:hover{--bg:var(--gold-300)}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--line{--bg:transparent;--fg:var(--green-900);border-color:var(--green-900);box-shadow:none}
+.btn--line:hover{--bg:var(--green-900);--fg:var(--gold-300)}
+.on-green .btn--line{--fg:var(--gold-300);border-color:var(--gold-500)}
+.on-green .btn--line:hover{--bg:var(--gold-400);--fg:var(--green-950);border-color:var(--gold-400)}
+
+.textlink{display:inline-flex;align-items:center;gap:.4em;font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px;transition:gap .25s var(--ease-out),color .2s}
+.textlink:hover{gap:.7em}
+.textlink svg{width:16px;height:16px}
+
+.tag{display:inline-flex;align-items:center;gap:.5em;padding:.35rem .65rem;font:700 .8rem/1.35 var(--sans);letter-spacing:.01em;color:#4E3A0C;background:#F2E3B5;border:1px dashed #8C6B1E}
+.tag svg{width:13px;height:13px;flex:none}
+.on-green .tag{color:var(--green-950)}
+
+.sec{padding-block:clamp(4rem,9vw,7.5rem)}
+.sec-head{display:grid;gap:var(--s4);max-width:44rem;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.sec-head h2{font-size:clamp(2.2rem,4.6vw,3.75rem)}
+.sec-head p{color:var(--ink-2);max-width:38rem}
+.on-green{background:var(--green-900);color:var(--on-green)}
+.on-green .sec-head p{color:var(--on-green-2)}
+.gild{color:var(--gold-400)}
+
+/* ---------- Fascia (header) ---------- */
+.fascia{position:relative;background:var(--green-900);color:var(--on-green);border-bottom:1px solid var(--gold-700)}
+.fascia::before{content:"";position:absolute;inset:10px var(--gutter) 12px;border:1px solid rgba(217,184,101,.38);outline:1px solid rgba(217,184,101,.18);outline-offset:4px;pointer-events:none}
+.fascia__bar{position:relative;display:flex;align-items:center;justify-content:space-between;gap:var(--s5);padding:1.15rem clamp(1rem,3vw,2.5rem) 0}
+.nav{display:flex;gap:var(--s5);font-size:.9rem;font-weight:600;letter-spacing:.02em}
+.nav a{text-decoration:none;color:var(--on-green-2);padding-block:.4rem;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.nav a:hover{color:var(--gold-300);border-color:var(--gold-500)}
+.fascia__cta{display:flex;align-items:center;gap:var(--s5);margin-left:auto}
+.fascia__phone{color:var(--on-green);text-decoration:none;font-weight:600;font-size:.95rem;font-variant-numeric:tabular-nums}
+.fascia__phone:hover{color:var(--gold-300)}
+.fascia .btn{min-height:44px;padding:.6rem 1.15rem;font-size:.92rem}
+.sign{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(1rem,3vw,2.5rem);padding:clamp(.5rem,1.4vw,.9rem) clamp(1rem,3vw,2.5rem) clamp(1.35rem,2.2vw,1.7rem)}
+.sign__side{font:600 .78rem/1.3 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold-400);display:flex;align-items:center;gap:var(--s4)}
+.sign__side::after,.sign__side--r::before{content:"";flex:1;height:1px;background:linear-gradient(currentColor,currentColor) center/100% 1px no-repeat;opacity:.55}
+.sign__side--r::after{display:none}
+.sign__side--r{justify-content:flex-end}
+.sign__side:not(.sign__side--r)::after{order:2}
+.sign__name{text-align:center}
+.wordmark{position:relative;display:inline-block;font-family:var(--serif);font-weight:900;font-size:clamp(3.4rem,8.6vw,6rem);line-height:.9;letter-spacing:.1em;margin-right:-.1em;color:var(--gold-400);text-shadow:.035em .04em 0 var(--gold-shade),.05em .06em .06em rgba(0,0,0,.35);font-variation-settings:"opsz" 96}
+.wordmark::after{content:attr(data-text);position:absolute;inset:0;color:var(--gold-100);text-shadow:none;-webkit-mask-image:linear-gradient(100deg,transparent 42%,#000 50%,transparent 58%);mask-image:linear-gradient(100deg,transparent 42%,#000 50%,transparent 58%);-webkit-mask-size:320% 100%;mask-size:320% 100%;-webkit-mask-position:100% 0;mask-position:100% 0;opacity:0;pointer-events:none}
+.is-ready .wordmark::after{animation:sweep 2.4s var(--ease-out) .35s both}
+@keyframes sweep{0%{opacity:.95;-webkit-mask-position:100% 0;mask-position:100% 0}80%{opacity:.95}100%{opacity:0;-webkit-mask-position:0 0;mask-position:0 0}}
+.sign__sub{display:block;margin-top:var(--s3);font:600 .82rem/1.3 var(--sans);letter-spacing:.42em;text-transform:uppercase;color:var(--on-green-2);margin-right:-.42em}
+
+/* ---------- Hero ---------- */
+.hero{padding-block:clamp(1.25rem,2vw,1.75rem) clamp(4rem,8vw,6.5rem)}
+.hero__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.hero__copy{padding-top:clamp(0rem,1vw,.75rem)}
+.hero h1{font-size:clamp(2.3rem,3.2vw,2.95rem);line-height:1.02;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--green-700)}
+.hero__lede{margin-top:var(--s4);font-size:1.06rem;color:var(--ink-2);max-width:33rem}
+.hero__actions{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:1.25rem}
+.hero__note{margin-top:var(--s3);font-size:.92rem;color:var(--ink-2)}
+.fromstrip{margin-top:var(--s4);border-top:1px solid var(--green-900);max-width:30rem}
+.fromstrip li{display:flex;align-items:baseline;gap:var(--s3);padding-block:.55rem;border-bottom:1px solid var(--lime-300)}
+.fromstrip span:first-child{font-weight:600}
+.fromstrip .dots{flex:1;border-bottom:1px dotted var(--ink-2);transform:translateY(-.3em);opacity:.6}
+.fromstrip .p{font-family:var(--serif);font-weight:800;font-size:1.3rem;font-variant-numeric:lining-nums tabular-nums}
+.fromstrip small{font-size:.78rem;font-weight:600;color:var(--ink-2);margin-right:.35em;text-transform:lowercase}
+
+.window{position:relative;background:var(--green-900);padding:10px;box-shadow:0 30px 60px -30px rgba(17,41,31,.55),0 8px 20px -12px rgba(17,41,31,.35)}
+.window::before{content:"";position:absolute;inset:5px;border:1px solid var(--gold-500);pointer-events:none}
+.window__transom{display:flex;justify-content:center;align-items:center;gap:.9em;flex-wrap:wrap;padding:.8rem 1rem .9rem;color:var(--gold-400);font:italic 600 clamp(1rem,1.5vw,1.25rem)/1.3 var(--serif);letter-spacing:.02em;border-bottom:1px solid var(--gold-500);margin-bottom:10px;text-align:center}
+.window__transom i{font-style:normal;color:var(--gold-500);font-size:.7em}
+.window__glass{position:relative;aspect-ratio:5/4;max-height:clamp(320px,calc(100vh - 390px),600px);width:100%;background:var(--green-800)}
+.window__glass img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.window__sill{height:10px}
+
+/* ---------- Price board ---------- */
+.board{position:relative;padding:clamp(1.5rem,4vw,3.5rem);background:var(--green-800);border:1px solid var(--gold-500);outline:1px solid rgba(217,184,101,.35);outline-offset:-9px}
+.board__cols{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(2rem,5vw,5rem)}
+.group + .group{margin-top:clamp(2.25rem,4vw,3rem)}
+.group__head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s4);padding-bottom:var(--s3);border-bottom:1px solid var(--gold-500);margin-bottom:var(--s2)}
+.group__head h3{font-size:clamp(1.6rem,2.6vw,2.2rem);color:var(--gold-400);font-weight:800}
+.group__head p{font-size:.9rem;color:var(--on-green-2);white-space:nowrap}
+.group__head p b{font-family:var(--serif);font-size:1.15rem;color:var(--gold-300);font-weight:700}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:var(--s4);align-items:baseline;padding-block:.8rem;border-bottom:1px solid var(--green-line)}
+.row__name{font-weight:600;color:var(--on-green);line-height:1.35}
+.row__meta{grid-column:1;font-size:.84rem;color:var(--on-green-2);margin-top:.15rem;font-variant-numeric:tabular-nums}
+.row__price{grid-row:1 / span 2;grid-column:2;align-self:center;font-family:var(--serif);font-weight:800;font-size:1.45rem;color:var(--gold-300);text-shadow:.03em .04em 0 var(--gold-shade);font-variant-numeric:lining-nums tabular-nums;text-align:right;min-width:3.6ch}
+.row__price--addon{font:600 .8rem/1.3 var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--on-green-2);font-variant-numeric:normal}
+.group__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s4);margin-top:var(--s5)}
+.group__foot p{font-size:.88rem;color:var(--on-green-2);max-width:26rem}
+.on-green .textlink{color:var(--gold-300)}
+.board__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s5);margin-top:clamp(2.5rem,5vw,3.5rem);padding-top:var(--s5);border-top:1px solid var(--gold-500)}
+.board__foot p{max-width:40rem;color:var(--on-green-2);font-size:.95rem}
+.board__foot p strong{color:var(--on-green)}
+
+/* ---------- Window panes ---------- */
+.panes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;background:var(--green-900);padding:10px;position:relative}
+.panes::before{content:"";position:absolute;inset:5px;border:1px solid var(--gold-500);pointer-events:none}
+.pane{position:relative;margin:0;background:var(--green-800)}
+.pane img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.pane figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s3);padding:.85rem .9rem .7rem;color:var(--on-green);font-size:.9rem;font-weight:600;border-top:1px solid var(--gold-700)}
+.pane figcaption b{font-family:var(--serif);color:var(--gold-300);font-size:1.15rem;font-variant-numeric:lining-nums tabular-nums}
+.pane:nth-child(even) img{aspect-ratio:3/4}
+
+/* ---------- Extensions ---------- */
+.ext{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.ext__photo{position:relative;background:var(--green-900);padding:10px}
+.ext__photo::before{content:"";position:absolute;inset:5px;border:1px solid var(--gold-500);pointer-events:none}
+.ext__photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:60% 30%}
+.ext h2{font-size:clamp(2.1rem,4.2vw,3.5rem)}
+.ext__body{display:grid;gap:var(--s4);margin-top:var(--s5);color:var(--ink-2);max-width:34rem}
+.ticket{margin-top:var(--s6);display:grid;grid-template-columns:auto 1fr;gap:var(--s2) var(--s5);align-items:center;padding:var(--s5);background:var(--lime-50);border:1px solid var(--green-900);outline:1px solid var(--lime-300);outline-offset:-6px;max-width:32rem}
+.ticket__price{grid-row:span 2;font-family:var(--serif);font-weight:900;font-size:3.1rem;line-height:1;color:var(--green-900);font-variant-numeric:lining-nums;padding-right:var(--s5);border-right:1px solid var(--lime-300)}
+.ticket__what{font-weight:700;line-height:1.3}
+.ticket__time{font-size:.9rem;color:var(--ink-2)}
+.ext .btn{margin-top:var(--s5)}
+
+/* ---------- Stylists ---------- */
+.team-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:var(--s5);margin-bottom:clamp(2.5rem,5vw,4rem)}
+.team-head .sec-head{margin-bottom:0}
+.directory{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);padding:clamp(1.75rem,4vw,3.5rem);border:1px solid var(--gold-500);outline:1px solid rgba(217,184,101,.35);outline-offset:-9px}
+.directory h3{color:var(--gold-400);font-size:clamp(1.9rem,3vw,2.5rem);text-shadow:.03em .04em 0 var(--gold-shade)}
+.directory .who{margin-top:var(--s2);font-weight:600;color:var(--gold-300);font-size:.95rem}
+.directory .bio{margin-top:var(--s3);color:var(--on-green-2);max-width:34rem}
+.directory .textlink{margin-top:var(--s4)}
+.lead{display:grid;align-content:start;justify-items:start;padding-right:clamp(1.75rem,4vw,3.5rem);border-right:1px solid var(--gold-500)}
+.lead h3{font-size:clamp(2.8rem,5.4vw,4.5rem)}
+.lead .bio{font-size:1.08rem}
+.specs{justify-self:stretch;margin-top:var(--s6);border-top:1px solid var(--gold-500)}
+.specs li{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s4);padding-block:.8rem;border-bottom:1px solid var(--green-line);font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.3rem,2.2vw,1.7rem);color:var(--on-green)}
+.specs li span{font:600 .85rem/1.3 var(--sans);font-style:normal;color:var(--on-green-2);white-space:nowrap}
+.staff{padding-left:clamp(1.75rem,4vw,3.5rem)}
+.staff li{display:grid;justify-items:start;padding-block:var(--s6);border-bottom:1px solid var(--green-line)}
+.staff li:first-child{padding-top:0}
+.staff li:last-child{border-bottom:0;padding-bottom:0}
+
+/* ---------- Reviews ---------- */
+.words{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.quote{margin:0}
+.quote blockquote{margin:0;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.65rem,3vw,2.5rem);line-height:1.3;letter-spacing:-.01em;color:var(--green-900)}
+.quote blockquote::before{content:"\201C";display:block;font-style:normal;font-weight:900;font-size:5rem;line-height:.6;color:var(--gold-500);margin-bottom:var(--s3)}
+.quote figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3) var(--s4);margin-top:var(--s5);font-weight:600}
+.stars{display:inline-flex;gap:2px;color:var(--gold-500)}
+.stars svg{width:16px;height:16px}
+.slots{display:grid;gap:var(--s4)}
+.slot{padding:var(--s5);border:1px dashed var(--gold-700);background:rgba(241,243,240,.6);display:grid;gap:var(--s3)}
+.slot p{color:var(--ink-2);font-size:.95rem}
+.rating{display:grid;gap:var(--s3);padding:var(--s5);background:var(--green-900);color:var(--on-green)}
+.rating__row{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s4)}
+.rating__label{font-weight:600}
+.rating b{font-family:var(--serif);font-size:2.2rem;color:var(--gold-300);line-height:1}
+
+/* ---------- Good to know ---------- */
+.know{border-top:1px solid var(--green-900)}
+.know li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s3) clamp(2rem,5vw,5rem);align-items:baseline;padding-block:var(--s5);border-bottom:1px solid var(--lime-300)}
+.know h3{font-style:italic;font-weight:600;font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.3;letter-spacing:-.01em;color:var(--green-900)}
+.know p{color:var(--ink-2);max-width:40rem}
+
+/* ---------- Visit ---------- */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.visit h2{font-size:clamp(2.2rem,4.6vw,3.75rem)}
+.addr{margin-top:var(--s5);font-style:normal;font-size:1.25rem;line-height:1.45;font-weight:500}
+.addr small{display:block;margin-top:var(--s2);font-size:.9rem;color:var(--ink-2)}
+.contact{margin-top:var(--s6);display:grid;border-top:1px solid var(--green-900)}
+.contact a{display:flex;align-items:center;gap:var(--s4);padding-block:var(--s4);border-bottom:1px solid var(--lime-300);text-decoration:none;font-weight:600;transition:color .2s,padding .25s var(--ease-out)}
+.contact a:hover{color:var(--green-700);padding-left:var(--s2)}
+.contact svg{width:20px;height:20px;color:var(--green-700);flex:none}
+.contact span.k{min-width:5.5rem;font-weight:500;color:var(--ink-2);font-size:.9rem}
+.hours{background:var(--green-900);color:var(--on-green);padding:clamp(1.5rem,3.5vw,2.75rem);border:1px solid var(--gold-500);outline:1px solid rgba(217,184,101,.35);outline-offset:-8px}
+.hours__head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s3);margin-bottom:var(--s4)}
+.hours h3{font-size:1.9rem;color:var(--gold-400)}
+.hours table{width:100%;border-collapse:collapse}
+.hours th,.hours td{padding:.7rem .25rem;border-bottom:1px solid var(--green-line);text-align:left;font-weight:500}
+.hours td{text-align:right;color:var(--on-green-2)}
+.hours tr.is-today th,.hours tr.is-today td{color:var(--green-950);background:var(--gold-300);font-weight:700}
+.hours tr.is-today th{padding-left:.75rem}
+.hours tr.is-today td{padding-right:.75rem}
+.hours .today-mark{font:700 .68rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-left:.6rem;padding:.2rem .35rem;border:1px solid currentColor;vertical-align:.12em}
+.hours__note{margin-top:var(--s4);font-size:.88rem;color:var(--on-green-2)}
+.map{grid-column:1 / -1;position:relative;background:var(--green-900);padding:10px}
+.map iframe{display:block;width:100%;height:clamp(240px,32vw,360px);border:0;filter:grayscale(.35) contrast(1.05)}
+
+/* ---------- Close ---------- */
+.close{position:relative;text-align:center;padding-block:0 clamp(4.5rem,9vw,7rem)}
+.close .lace{color:var(--lime-100);background:var(--lime-100)}
+.close__inner{padding-top:clamp(3rem,7vw,5.5rem);display:grid;justify-items:center;gap:var(--s5)}
+.close h2{font-size:clamp(2.6rem,6vw,5rem);color:var(--gold-400);text-shadow:.03em .035em 0 var(--gold-shade)}
+.close p{color:var(--on-green-2);max-width:34rem;font-size:1.1rem}
+.close__actions{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s3);margin-top:var(--s3)}
+
+/* ---------- Footer ---------- */
+.foot{background:var(--stone-900);color:#C9D1CC;padding-block:var(--s8) var(--s7);font-size:.92rem}
+.foot__grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:var(--s7)}
+.foot .mini{font-family:var(--serif);font-weight:900;font-size:2rem;letter-spacing:.1em;color:var(--gold-400)}
+.foot p{color:#AEB9B3;max-width:26rem}
+.foot h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-300);margin-bottom:var(--s3);font-weight:700}
+.foot li{padding-block:.2rem}
+.foot a{color:#DDE3DF;text-decoration:none}
+.foot a:hover{color:var(--gold-300);text-decoration:underline}
+.foot__base{margin-top:var(--s7);padding-top:var(--s5);border-top:1px solid #36413E;display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4);color:#97A39D;font-size:.84rem}
+.foot__base p{max-width:none;color:#97A39D}
+.foot :focus-visible{outline-color:var(--focus-dark)}
+
+/* ---------- Mobile booking bar ---------- */
+.bookbar{display:none}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .nav{display:none}
+  .sign__side{display:none}
+  .sign{grid-template-columns:1fr}
+  .board__cols{grid-template-columns:1fr}
+  .panes{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .hero__grid{grid-template-columns:1fr}
+  .hero__copy{padding-top:0}
+  .window__glass{aspect-ratio:4/3;max-height:none}
+  .ext{grid-template-columns:1fr}
+  .ext__photo{order:2}
+  .ext__photo img{aspect-ratio:4/3}
+  .directory{grid-template-columns:1fr}
+  .lead{padding-right:0;border-right:0;padding-bottom:var(--s6);border-bottom:1px solid var(--gold-500)}
+  .staff{padding-left:0;padding-top:var(--s6)}
+  .words{grid-template-columns:1fr}
+  .visit{grid-template-columns:1fr}
+  .foot__grid{grid-template-columns:1fr 1fr}
+  .foot__grid > :first-child{grid-column:1 / -1}
+}
+@media (max-width:760px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .fascia__phone{display:none}
+  .fascia__bar{padding-top:var(--s4)}
+  .sign{grid-template-columns:1fr;gap:0;padding-top:var(--s3)}
+  .sign__side{display:none}
+  .know li{grid-template-columns:1fr}
+  .bookbar{display:grid;grid-template-columns:1.35fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:var(--z-bar);padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--green-950);border-top:1px solid var(--gold-500);box-shadow:0 -10px 30px -10px rgba(0,0,0,.4)}
+  .bookbar .btn{min-height:52px;padding:.7rem .8rem;font-size:1rem}
+  .bookbar .btn--line{--fg:var(--gold-300);border-color:var(--gold-500)}
+  .lace{height:34px;-webkit-mask-size:72px 42px;mask-size:72px 42px}
+}
+@media (max-width:560px){
+  .fascia::before{inset:8px 10px 10px}
+  .fascia .btn{min-height:40px;padding:.5rem .9rem;font-size:.85rem}
+  .fascia__brandmini{font-size:.72rem}
+  .sign__sub{letter-spacing:.3em;margin-right:-.3em;font-size:.72rem}
+  .hero__actions .btn{flex:1 1 100%}
+  .window__transom{font-size:.98rem;gap:.55em}
+  .group__head{flex-direction:column;gap:var(--s1)}
+  .panes{gap:8px;padding:8px}
+  .pane figcaption{flex-direction:column;gap:2px;font-size:.84rem;padding:.7rem .7rem .6rem}
+  .ticket{grid-template-columns:1fr}
+  .ticket__price{grid-row:auto;border-right:0;padding-right:0;border-bottom:1px solid var(--lime-300);padding-bottom:var(--s3)}
+  .foot__grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .is-ready .wordmark::after{animation:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="1"/><path d="M3.5 9.5h17M8 3v4M16 3v4M8 13.5h2M14 13.5h2M8 17h2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.4 4-2 1.3a11 11 0 0 0 6.6 6.6l1.3-2 4 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="1"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 16.5v.5"/><circle cx="12" cy="12" r="9"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 21v-7.5h2.6l.4-3h-3V8.7c0-.9.3-1.5 1.6-1.5h1.5V4.5a19 19 0 0 0-2.3-.1c-2.3 0-3.8 1.4-3.8 3.9v2.2H9v3h2.5V21"/></symbol>
+  </defs>
+</svg>
+
+<header class="fascia on-green">
+  <div class="wrap">
+    <div class="fascia__bar">
+      <nav class="nav" aria-label="Main">
+        <a href="#prices">Prices</a>
+        <a href="#extensions">Extensions</a>
+        <a href="#stylists">Stylists</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="fascia__cta">
+        <a class="fascia__phone" href="tel:+61353388858">03 5338 8858</a>
+        <a class="btn" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book online</a>
+      </div>
+    </div>
+    <div class="sign">
+      <span class="sign__side">Est. 2005</span>
+      <div class="sign__name">
+        <a href="#main" style="text-decoration:none" aria-label="Ember Salon, back to top"><span class="wordmark" data-text="EMBER" aria-hidden="true">EMBER</span></a>
+        <span class="sign__sub">Salon &middot; Ballarat</span>
+      </div>
+      <span class="sign__side sign__side--r">Doveton St N</span>
+    </div>
+  </div>
+</header>
+<div class="lace" aria-hidden="true"></div>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1 id="hero-title">Blondes, brunettes and Great&nbsp;Lengths, <em>in steady hands</em> since&nbsp;2005.</h1>
+      <p class="hero__lede">An independent salon on Doveton Street North. Our three master stylists each have more than twenty years behind the chair, including a Keune Colour Master and eighteen years fitting Great Lengths extensions.</p>
+      <div class="hero__actions">
+        <a class="btn" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+        <a class="btn btn--line" href="tel:+61353388858"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 03 5338 8858</a>
+      </div>
+      <p class="hero__note">Pick your stylist, service and time online. It takes a couple of minutes.</p>
+      <ul class="fromstrip" aria-label="Starting prices">
+        <li><span>Ladies cut</span><span class="dots" aria-hidden="true"></span><span class="p"><small>from</small>$89</span></li>
+        <li><span>Colour</span><span class="dots" aria-hidden="true"></span><span class="p"><small>from</small>$149</span></li>
+        <li><span>Extensions consultation</span><span class="dots" aria-hidden="true"></span><span class="p">$29</span></li>
+      </ul>
+    </div>
+    <div class="window">
+      <p class="window__transom" aria-label="Colour, cuts, blow-waves, Great Lengths extensions">Colour <i aria-hidden="true">&#9670;</i> Cuts <i aria-hidden="true">&#9670;</i> Blow-waves <i aria-hidden="true">&#9670;</i> Great Lengths</p>
+      <div class="window__glass">
+        <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=1200&q=78"
+             srcset="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=700&q=75 700w, https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=1200&q=78 1200w, https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=1800&q=75 1800w"
+             sizes="(max-width:900px) 100vw, 58vw" width="1200" height="960" fetchpriority="high"
+             alt="Long, softly waved blonde hair with lighter pieces through the lengths, seen from behind in a salon">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lace lace--short" aria-hidden="true"></div>
+<section class="sec on-green" id="prices" aria-labelledby="prices-title" style="padding-top:clamp(3rem,7vw,5.5rem)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="prices-title" class="gild">Every price, on the board.</h2>
+      <p>Everything we book online, priced with the time it takes. Extensions are quoted at your $29 consultation.</p>
+    </div>
+
+    <div class="board">
+      <div class="board__cols">
+        <div>
+          <div class="group">
+            <div class="group__head"><h3>Colour</h3><p>from <b>$149</b></p></div>
+            <ul>
+              <li class="row"><span class="row__name">Gloss toner</span><span class="row__meta">1 hr &middot; includes your choice of style to finish</span><span class="row__price">$149</span></li>
+              <li class="row"><span class="row__name">Tint package</span><span class="row__meta">Roots only &middot; 30 min</span><span class="row__price">$195</span></li>
+              <li class="row"><span class="row__name">Solid tint</span><span class="row__meta">Roots to ends &middot; 30 min</span><span class="row__price">$219</span></li>
+              <li class="row"><span class="row__name">Face-line highlights</span><span class="row__meta">30 min</span><span class="row__price">$229</span></li>
+              <li class="row"><span class="row__name">On-scalp bleach</span><span class="row__meta">Roots only &middot; 40 min</span><span class="row__price">$249</span></li>
+              <li class="row"><span class="row__name">Half head of highlights</span><span class="row__meta">Roots only &middot; 40 min</span><span class="row__price">$259</span></li>
+              <li class="row"><span class="row__name">Brunette package</span><span class="row__meta">Root colour and a few highlights &middot; 50 min</span><span class="row__price">$289</span></li>
+              <li class="row"><span class="row__name">Three-quarter head of highlights</span><span class="row__meta">Roots only &middot; 50 min</span><span class="row__price">$299</span></li>
+              <li class="row"><span class="row__name">Full head of highlights</span><span class="row__meta">Roots only &middot; 1 hr 10 min</span><span class="row__price">$389</span></li>
+              <li class="row"><span class="row__name">Intense full head of highlights</span><span class="row__meta">Roots to ends, including tip-outs &middot; 1 hr 30 min</span><span class="row__price">$489</span></li>
+            </ul>
+            <div class="group__foot">
+              <p>Booking colour online? Choose your colour first, then add a cut or blow-wave so there’s time to finish.</p>
+              <a class="textlink" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book colour <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="group">
+            <div class="group__head"><h3>Cuts &amp; styling</h3><p>from <b>$20</b></p></div>
+            <ul>
+              <li class="row"><span class="row__name">Fringe trim</span><span class="row__meta">15 min</span><span class="row__price">$20</span></li>
+              <li class="row"><span class="row__name">Blow-wave</span><span class="row__meta">Wash and blow-wave &middot; 40 min</span><span class="row__price">$75</span></li>
+              <li class="row"><span class="row__name">Ladies cut</span><span class="row__meta">40 min</span><span class="row__price">$89</span></li>
+              <li class="row"><span class="row__name">Ladies restyle cut</span><span class="row__meta">1 hr</span><span class="row__price">$105</span></li>
+              <li class="row"><span class="row__name">Shag or wolf cut</span><span class="row__meta">1 hr</span><span class="row__price">$115</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <div class="group__head"><h3>After colour</h3><p>add to a colour</p></div>
+            <ul>
+              <li class="row"><span class="row__name">Cut, after a colour service</span><span class="row__meta">50 min</span><span class="row__price row__price--addon">Add-on</span></li>
+              <li class="row"><span class="row__name">Blow-wave, after a colour service</span><span class="row__meta">40 min</span><span class="row__price row__price--addon">Add-on</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <div class="group__head"><h3>Extensions</h3><p>start here</p></div>
+            <ul>
+              <li class="row"><span class="row__name">Great Lengths consultation</span><span class="row__meta">30 min</span><span class="row__price">$29</span></li>
+            </ul>
+            <div class="group__foot">
+              <a class="textlink" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book a cut or consult <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="board__foot">
+        <p><strong>Also in the chair:</strong> cuts for all genders, treatments for hair health, occasion styling and special-event make-up. Call us for these.</p>
+        <a class="btn" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+      </div>
+    </div>
+
+    <div class="panes" style="margin-top:clamp(3rem,6vw,5rem)" role="list" aria-label="Services in the window">
+      <figure class="pane" role="listitem">
+        <img src="https://images.unsplash.com/photo-1605980625982-b128a7e7fde2?auto=format&fit=crop&w=640&h=853&q=72" width="640" height="853" loading="lazy" alt="Hair sectioned into foils for highlights">
+        <figcaption>Full head of highlights <b>$389</b></figcaption>
+      </figure>
+      <figure class="pane" role="listitem">
+        <img src="https://images.unsplash.com/photo-1700760934268-8aa0ef52ce0a?auto=format&fit=crop&w=640&h=853&q=72" width="640" height="853" loading="lazy" alt="A stylist cutting wet dark hair with scissors">
+        <figcaption>Ladies cut <b>$89</b></figcaption>
+      </figure>
+      <figure class="pane" role="listitem">
+        <img src="https://images.unsplash.com/photo-1734111719430-fe4a3973f8af?auto=format&fit=crop&w=640&h=853&q=72" width="640" height="853" loading="lazy" alt="A round brush drawing through a length of blonde hair">
+        <figcaption>Blow-wave <b>$75</b></figcaption>
+      </figure>
+      <figure class="pane" role="listitem">
+        <img src="https://images.unsplash.com/photo-1560869713-bf165a9cfac1?auto=format&fit=crop&w=640&h=853&q=72" width="640" height="853" loading="lazy" alt="Brunette hair with soft lighter pieces being curled">
+        <figcaption>Brunette package <b>$289</b></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<div class="lace lace--short" aria-hidden="true"></div>
+
+<section class="sec" id="extensions" aria-labelledby="ext-title">
+  <div class="wrap ext">
+    <div class="ext__photo">
+      <img src="https://images.unsplash.com/photo-1516018648631-0a79b7ea609c?auto=format&fit=crop&w=1000&h=1250&q=75" width="1000" height="1250" loading="lazy" alt="Very long blonde hair falling past the shoulders">
+    </div>
+    <div>
+      <h2 id="ext-title">Great Lengths, fitted by someone who’s done it for eighteen years.</h2>
+      <div class="ext__body">
+        <p>Great Lengths extensions are 100% virgin Remy hair. Every cuticle runs the same way from root to tip, the way your own hair grows, so the lengths blend in, feel natural and keep their condition over time.</p>
+        <p>Georgia has been fitting them for more than eighteen years. Every set starts with a conversation.</p>
+      </div>
+      <div class="ticket">
+        <span class="ticket__price">$29</span>
+        <span class="ticket__what">Great Lengths consultation</span>
+        <span class="ticket__time">30 minutes, before anything is booked in</span>
+      </div>
+      <a class="btn" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book your consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="stylists" aria-labelledby="team-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="team-head">
+      <div class="sec-head">
+        <h2 id="team-title">Who’s behind the chair.</h2>
+        <p>Ask for anyone by name when you book online, or tell us what you’re after and we’ll match you with the right stylist.</p>
+      </div>
+      <span class="tag"><svg aria-hidden="true"><use href="#i-note"/></svg>Bios from your current website: confirm they’re current</span>
+    </div>
+    <div class="directory on-green">
+      <article class="lead">
+        <h3>Georgia</h3>
+        <p class="who">Salon Director &middot; 27+ years</p>
+        <p class="bio">A master of cutting and colour, and a Great Lengths natural extensions specialist for more than 18 years.</p>
+        <ul class="specs" aria-label="Georgia's specialties">
+          <li>Cutting</li>
+          <li>Colour</li>
+          <li>Great Lengths extensions <span>18+ years</span></li>
+        </ul>
+        <a class="textlink" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book with Georgia <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <ul class="staff">
+        <li>
+          <h3>Grace</h3>
+          <p class="who">Master Stylist &middot; 22+ years</p>
+          <p class="bio">A qualified Keune Colour Master, cutting, colouring and styling for special occasions.</p>
+          <a class="textlink" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book with Grace <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+        <li>
+          <h3>Mellitta</h3>
+          <p class="who">Master Stylist &middot; 21+ years</p>
+          <p class="bio">Colour and balayage specialist, and the hands behind the salon’s signature volume blow-wave.</p>
+          <a class="textlink" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book with Mellitta <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+        <li>
+          <h3>Ash</h3>
+          <p class="who">Emerging Stylist &middot; resident beauty therapist</p>
+          <p class="bio">Brings positive energy and a different set of skills to the salon and its clients.</p>
+          <a class="textlink" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book with Ash <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="words-title" style="padding-top:0">
+  <div class="wrap">
+    <h2 id="words-title" class="vh">What clients say</h2>
+    <div class="words">
+      <figure class="quote">
+        <blockquote><p>The owner Georgia has been doing my hair for over a decade. Cannot fault her. She’s brilliant with my blonde. She’s honest and knowledgeable about what is achievable. 10/10!</p></blockquote>
+        <figcaption>
+          <span class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span>Miranda H., Google review</span>
+          <span class="tag"><svg aria-hidden="true"><use href="#i-note"/></svg>Shown on your current site: confirm before publishing</span>
+        </figcaption>
+      </figure>
+      <div class="slots">
+        <div class="rating on-green">
+          <div class="rating__row"><span class="rating__label">Google rating</span><b>&mdash;</b></div>
+          <span class="tag">Placeholder: add Google rating &amp; review count</span>
+        </div>
+        <div class="slot">
+          <span class="tag">Placeholder review</span>
+          <p>Add a second recent Google review here: a colour or extensions client, first name and initial.</p>
+        </div>
+        <div class="slot">
+          <span class="tag">Placeholder review</span>
+          <p>Add a third review here, ideally about a cut or blow-wave with Grace, Mellitta or Ash.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="know-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="know-title">Good to know before you book.</h2>
+    </div>
+    <ul class="know">
+      <li><h3>Choose your stylist.</h3><p>Select them when you book online or mention them on the phone. Not sure who? We’ll recommend someone for the result you want.</p></li>
+      <li><h3>Colour comes with a finish.</h3><p>Add a cut or blow-wave to any colour service. It gives your stylist the time to finish properly.</p></li>
+      <li><h3>Book ahead for weekends.</h3><p>Weekend and special-occasion appointments go first, so lock in your preferred date early.</p></li>
+      <li><h3>Give us 24 hours to change.</h3><p>Cancel or reschedule by phone or online at least 24 hours ahead. Later changes may incur a fee, and no-shows may be charged the full service.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="visit" aria-labelledby="visit-title" style="padding-top:0">
+  <div class="wrap visit">
+    <div>
+      <h2 id="visit-title">Find us on Doveton Street North.</h2>
+      <address class="addr">24A Doveton Street North<br>Ballarat Central VIC 3350<small>Formerly Hair Society Ballarat. Same street, new name.</small></address>
+      <div class="contact">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Ember%20Salon%2C%2024A%20Doveton%20Street%20North%2C%20Ballarat%20Central%20VIC%203350&amp;query_place_id=ChIJLZkL_k9E0WoRB_hqQEVVjNE" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg><span class="k">Directions</span>Open in Google Maps</a>
+        <a href="tel:+61353388858"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="k">Phone</span>03 5338 8858</a>
+        <a href="mailto:info@embersalon.com.au"><svg aria-hidden="true"><use href="#i-mail"/></svg><span class="k">Email</span>info@embersalon.com.au</a>
+        <a href="https://www.instagram.com/embersalonballarat/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg><span class="k">Instagram</span>@embersalonballarat</a>
+        <a href="https://www.facebook.com/embersalonballarat" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg><span class="k">Facebook</span>embersalonballarat</a>
+      </div>
+    </div>
+    <div>
+      <div class="hours on-green">
+        <div class="hours__head">
+          <h3>Opening hours</h3>
+          <span class="tag">Placeholder hours: replace with real trading hours</span>
+        </div>
+        <table>
+          <caption class="vh">Opening hours, today highlighted</caption>
+          <tbody id="hours-body"></tbody>
+        </table>
+        <p class="hours__note">Online booking is open around the clock.</p>
+      </div>
+    </div>
+    <div class="map">
+        <iframe title="Map showing Ember Salon on Doveton Street North, Ballarat Central" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-37.5605757,143.8552701&amp;z=17&amp;output=embed"></iframe>
+      </div>
+  </div>
+</section>
+
+<section class="close on-green" aria-labelledby="close-title">
+  <div class="lace" aria-hidden="true"></div>
+  <div class="wrap close__inner">
+    <h2 id="close-title">Pull up a chair.</h2>
+    <p>Book online any time in a couple of minutes, or call the salon and we’ll find you a spot.</p>
+    <div class="close__actions">
+      <a class="btn" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+      <a class="btn btn--line" href="tel:+61353388858"><svg aria-hidden="true"><use href="#i-phone"/></svg>03 5338 8858</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <div class="mini">EMBER</div>
+        <p>Hair salon on Doveton Street North, Ballarat Central, since 2005. Colour, cuts, styling, occasion styles and Great Lengths natural hair extensions.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <ul>
+          <li>24A Doveton Street North</li>
+          <li>Ballarat Central VIC 3350</li>
+          <li><a href="tel:+61353388858">03 5338 8858</a></li>
+          <li><a href="mailto:info@embersalon.com.au">info@embersalon.com.au</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Book &amp; follow</h2>
+        <ul>
+          <li><a href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener">Book online</a></li>
+          <li><a href="#prices">Price list</a></li>
+          <li><a href="https://www.instagram.com/embersalonballarat/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/embersalonballarat" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <p>&copy; <span id="yr">2026</span> Ember Salon. Prices from our online booking system; confirm when you book.</p>
+      <p>Photography: Unsplash, standing in until salon photos are supplied. Redesign concept.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="bookbar on-green" role="region" aria-label="Quick booking">
+  <a class="btn" href="https://bookings.gettimely.com/hairsociety/book" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+  <a class="btn btn--line" href="tel:+61353388858"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+</div>
+
+<script>
+(function(){
+  /* PLACEHOLDER HOURS: replace with the salon's real trading hours. */
+  var HOURS = [
+    ["Monday","Closed"],
+    ["Tuesday","9:00am – 5:30pm"],
+    ["Wednesday","9:00am – 5:30pm"],
+    ["Thursday","9:00am – 7:00pm"],
+    ["Friday","9:00am – 5:30pm"],
+    ["Saturday","8:30am – 1:00pm"],
+    ["Sunday","Closed"]
+  ];
+  var today = "";
+  try { today = new Intl.DateTimeFormat("en-AU",{weekday:"long",timeZone:"Australia/Melbourne"}).format(new Date()); } catch(e) {
+    today = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][new Date().getDay()];
+  }
+  var body = document.getElementById("hours-body");
+  if (body) {
+    body.innerHTML = HOURS.map(function(h){
+      var isToday = h[0] === today;
+      return '<tr' + (isToday ? ' class="is-today" aria-current="date"' : '') + '><th scope="row">' + h[0] +
+        (isToday ? '<span class="today-mark">Today</span>' : '') + '</th><td>' + h[1] + '</td></tr>';
+    }).join("");
+  }
+  var yr = document.getElementById("yr");
+  if (yr) yr.textContent = new Date().getFullYear();
+  requestAnimationFrame(function(){ document.documentElement.classList.add("is-ready"); });
+})();
+</script>
+</body>
+</html>
